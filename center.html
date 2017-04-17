@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>haorooms不固定高度div写法</title>
+
+    <style>
+    *{margin: 0;padding: 0;}
+    /*
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #000;
+  width:50%;
+  height: 50%;
+/*-webkit-transform: translateX(-50%) translateY(-50%);*/
+/*-webkit-transform:translate(-50%,-50%);
+}*/
+
+.father{position:fixed;width:100%;height:100%;top;0;left:0;}
+.son{position: absolute;top:0;left:0;bottom:0;right:0;width:50%;height:50%;margin:auto;background-color:red;}
+    </style>
+</head>
+<body>
+    <!-- <div class="center"></div> -->
+    <div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>
